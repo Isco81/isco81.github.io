@@ -1,122 +1,124 @@
 ---
 layout: "default"
-title: "Explore the JavaScript Universe: Concepts and Examples 🌌"
-description: "Explore JavaScript concepts with clear examples in the JavaScript-Universe repository. Master topics like Functions, Promises, and more! 🌌💻"
+title: "Hex2024 React Training Week 3: Mastering React.js"
+description: "Explore the Hex2024 React Training Week 3 project. Master React.js with practical examples and a clear project structure. 🌟💻"
 ---
-# Explore the JavaScript Universe: Concepts and Examples 🌌
+# Hex2024 React Training Week 3: Mastering React.js
 
-![JavaScript Universe](https://img.shields.io/badge/JavaScript%20Universe-Explore%20Now-brightgreen)
+![Hex2024 React Training](https://img.shields.io/badge/Hex2024-React-Training-blue?style=for-the-badge&logo=react)
 
-Welcome to the **JavaScript Universe**! This repository offers a deep dive into essential JavaScript concepts, enriched with practical examples. Whether you're a beginner or an experienced developer, you'll find valuable insights to enhance your JavaScript skills. 
+## Overview
+
+This repository contains the projects from the third week of the 六角 2024 React practical winter class. The focus is on mastering React.js, utilizing various tools and libraries to enhance your skills in building modern web applications.
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Topics Covered](#topics-covered)
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [API Documentation](#api-documentation)
 - [Contributing](#contributing)
 - [License](#license)
 - [Releases](#releases)
 
-## Getting Started
+## Technologies Used
 
-To get started with the JavaScript Universe, visit our [Releases section](https://github.com/Isco81/JavaScript-Universe/releases) for the latest updates and downloads. 
+This project employs a range of technologies to provide a robust learning experience:
 
-### Prerequisites
+- **React.js**: A JavaScript library for building user interfaces.
+- **Axios**: A promise-based HTTP client for making requests.
+- **Bootstrap 5**: A CSS framework for responsive design.
+- **Vite**: A build tool that provides a fast development experience.
+- **JSON**: A lightweight data interchange format.
+- **JSX**: A syntax extension for JavaScript that looks similar to XML.
+- **Map**: A built-in JavaScript object for storing key-value pairs.
+- **RESTful API**: An architectural style for designing networked applications.
+- **Swagger UI**: A tool for documenting APIs.
+- **gh-pages**: A GitHub feature for hosting static websites.
 
-Ensure you have the following installed on your machine:
+## Installation
 
-- Node.js
-- npm (Node Package Manager)
-
-### Installation
+To get started with this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Isco81/JavaScript-Universe.git
+   git clone https://github.com/Isco81/Hex2024-React-Training-Week3.git
    ```
-2. Navigate into the directory:
+2. Navigate to the project directory:
    ```bash
-   cd JavaScript-Universe
+   cd Hex2024-React-Training-Week3
    ```
 3. Install the dependencies:
    ```bash
    npm install
    ```
 
-## Topics Covered
-
-This repository explores a variety of JavaScript topics. Below is a brief overview of each:
-
-### 1. Await-Async
-
-Learn how to work with asynchronous code using the `async` and `await` keywords. This section covers how these features simplify working with promises.
-
-### 2. Callback
-
-Understand the concept of callbacks in JavaScript. This section explains how to use callbacks to handle asynchronous operations.
-
-### 3. Closure
-
-Explore closures in JavaScript. This topic discusses how closures work and their practical applications in real-world scenarios.
-
-### 4. ES6 JavaScript
-
-Discover the features introduced in ES6, such as arrow functions, template literals, and destructuring. This section provides examples to illustrate each feature.
-
-### 5. ES8 Async/Await
-
-Dive deeper into the `async` and `await` features introduced in ES8. This section provides advanced examples and best practices for using these features.
-
-### 6. Event Loop
-
-Understand the JavaScript event loop and how it handles asynchronous operations. This section explains the execution context and call stack.
-
-### 7. Events
-
-Learn about events in JavaScript, including how to create and handle custom events. This section includes examples for better understanding.
-
-### 8. Functional Programming
-
-Explore functional programming concepts in JavaScript. This section covers pure functions, higher-order functions, and immutability.
-
-### 9. Inheritance
-
-Understand how inheritance works in JavaScript. This topic discusses prototypal inheritance and class-based inheritance.
-
-### 10. JavaScript Basics
-
-This section covers fundamental JavaScript concepts such as variables, data types, and operators. It serves as a great starting point for beginners.
-
-### 11. Object
-
-Learn about objects in JavaScript. This section explains how to create and manipulate objects, including object methods and properties.
-
-### 12. OOPs in JavaScript
-
-Explore object-oriented programming concepts in JavaScript. This section covers classes, inheritance, and encapsulation.
-
-### 13. Promise
-
-Understand promises in JavaScript. This section explains how to create and handle promises, including chaining and error handling.
-
-### 14. Prototype
-
-Learn about the prototype chain in JavaScript. This topic discusses how prototypes work and their role in inheritance.
-
 ## Usage
 
-After installation, you can run examples from the repository. Each topic contains code snippets that you can execute in your local environment. 
+To run the project locally, use the following command:
 
-To run a specific example, navigate to the relevant folder and execute:
 ```bash
-node example.js
+npm run dev
 ```
+
+This will start the development server. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+
+For deployment, you can build the project and host it using GitHub Pages:
+
+```bash
+npm run build
+npm run deploy
+```
+
+You can download the latest release from [here](https://github.com/Isco81/Hex2024-React-Training-Week3/releases). Make sure to execute the downloaded file to run the application.
+
+## Project Structure
+
+The project is organized into several key directories and files:
+
+```
+Hex2024-React-Training-Week3/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── index.jsx
+├── package.json
+└── README.md
+```
+
+- **public/**: Contains static files like `index.html`.
+- **src/**: Contains all the source code, including components and pages.
+- **package.json**: Lists project dependencies and scripts.
+
+## Features
+
+This project showcases several features that highlight the capabilities of React.js:
+
+- **Dynamic Routing**: Navigate between different pages using React Router.
+- **State Management**: Manage application state effectively with hooks.
+- **API Integration**: Fetch data from RESTful APIs using Axios.
+- **Responsive Design**: Utilize Bootstrap 5 for a mobile-friendly interface.
+- **Real-time Updates**: Implement WebSocket for live data updates.
+
+## API Documentation
+
+The project interacts with a RESTful API to fetch and send data. You can view the API documentation using Swagger UI. To access it, run the following command:
+
+```bash
+npm run api-docs
+```
+
+Then, open your browser and navigate to `http://localhost:3000/api-docs`.
 
 ## Contributing
 
-We welcome contributions! If you'd like to contribute to the JavaScript Universe, please follow these steps:
+We welcome contributions to this project. To contribute:
 
 1. Fork the repository.
 2. Create a new branch:
@@ -125,15 +127,13 @@ We welcome contributions! If you'd like to contribute to the JavaScript Universe
    ```
 3. Make your changes and commit them:
    ```bash
-   git commit -m "Add some feature"
+   git commit -m "Add your message"
    ```
 4. Push to the branch:
    ```bash
    git push origin feature/YourFeature
    ```
-5. Open a pull request.
-
-Please ensure your code adheres to the existing style and includes appropriate tests.
+5. Create a pull request.
 
 ## License
 
@@ -141,8 +141,18 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-For the latest releases, visit our [Releases section](https://github.com/Isco81/JavaScript-Universe/releases). Here, you can download and execute the files needed for your projects.
+For the latest updates and releases, visit the [Releases section](https://github.com/Isco81/Hex2024-React-Training-Week3/releases). You can download the latest version and execute the file to run the application.
 
-![Releases](https://img.shields.io/badge/Releases-Latest%20Updates-blue)
+## Acknowledgments
 
-Explore the infinite cosmos of JavaScript mastery!
+Thanks to all the instructors and participants of the 六角 2024 React class for their support and collaboration. Your contributions and feedback have been invaluable.
+
+![React Training](https://img.shields.io/badge/React-Training-61DAFB?style=for-the-badge&logo=react)
+
+## Contact
+
+For questions or feedback, please reach out to the repository owner through GitHub.
+
+---
+
+Feel free to explore the code, ask questions, and share your insights. Happy coding!
