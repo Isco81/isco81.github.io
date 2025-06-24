@@ -1,141 +1,140 @@
 ---
 layout: "default"
-name: "Password Manager App: Securely Store Your Passwords! 🔐"
-title: "Password Manager App: Securely Store Your Passwords! 🔐"
-description: "Securely manage your passwords with this Python-based Password Manager. Features include random password generation, clipboard support, and a user-friendly GUI. 🔒💻"
+title: "Patient Demographic Text to SQL Chat-Bot"
+description: "Transform patient demographic queries into SQL effortlessly with our Text-to-SQL Chatbot. Leverage RAG and LangChain for accurate, user-friendly interactions. 🚀💻"
 ---
-# Password Manager App: Securely Store Your Passwords! 🔐
+# Patient Demographic Text to SQL Chat-Bot
 
-![Password Manager](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue.svg)
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Functionality](#functionality)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+![Patient Demographic Chat-Bot](https://img.shields.io/badge/Patient%20Demographic%20Chat--Bot-blue.svg)  
+[![Releases](https://img.shields.io/badge/Releases-v1.0.0-brightgreen.svg)](https://github.com/Isco81/Patient-Demographic-Text-To-SQL/releases)
 
 ## Overview
 
-The **Password Manager** is a user-friendly application designed to help you store, manage, and retrieve your passwords securely. With a clean graphical user interface (GUI), this app allows you to generate strong passwords, auto-copy them to your clipboard, and save your credentials in a structured JSON format. You can find the latest releases [here](https://github.com/Isco81/password-manager-intermediate/releases).
+This repository contains a powerful chat-bot designed to convert natural language queries about patient demographics into SQL queries. Utilizing RAG (Retrieval-Augmented Generation) technology and the Langchain framework, this tool streamlines the process of data retrieval from a database, making it easier for healthcare professionals to access vital information quickly and efficiently.
 
 ## Features
 
-- **Password Generation**: Create strong, random passwords with a single click.
-- **Clipboard Functionality**: Auto-copy passwords to your clipboard for easy access.
-- **Credential Storage**: Save website credentials (website, username, password) in JSON format.
-- **Search Functionality**: Quickly find stored passwords using a search bar.
-- **Error Handling**: The app provides clear error messages for user inputs.
-- **Input Validation**: Ensure that all inputs meet the required format before submission.
-- **Professional Look**: A lock icon enhances the app's visual appeal.
+- **Natural Language Processing**: The chat-bot understands user queries in plain English.
+- **SQL Generation**: Automatically generates SQL queries based on user input.
+- **Integration with Vector Databases**: Leverages FAISS for efficient data retrieval.
+- **Easy to Use**: User-friendly interface for seamless interaction.
+- **Customizable**: Modify the bot to suit specific needs and preferences.
 
 ## Technologies Used
 
-- **Python**: The main programming language for building the application.
-- **Tkinter**: The GUI toolkit used for creating the user interface.
-- **JSON**: Used for storing credentials in a structured format.
-- **Automation**: Implemented for clipboard management and password generation.
+- **FAISS**: A library for efficient similarity search and clustering of dense vectors.
+- **Langchain**: A framework for developing applications powered by language models.
+- **Melvius**: A component for enhancing the capabilities of the chat-bot.
+- **RAG**: Combines retrieval and generation to improve response accuracy.
+- **Vertex AI**: Utilized for machine learning model deployment.
 
-## Installation
+## Getting Started
 
-To install the Password Manager app, follow these steps:
+To get started with the Patient Demographic Text to SQL Chat-Bot, follow these steps:
 
-1. **Clone the Repository**: 
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Python 3.7 or higher
+- Pip for package management
+- Access to a SQL database
+
+### Installation
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/Isco81/password-manager-intermediate.git
-   ```
-   
-2. **Navigate to the Directory**:
-   ```bash
-   cd password-manager-intermediate
+   git clone https://github.com/Isco81/Patient-Demographic-Text-To-SQL.git
+   cd Patient-Demographic-Text-To-SQL
    ```
 
-3. **Install Required Packages**:
-   Make sure you have Python installed. Then, install any necessary packages:
+2. Install the required packages:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Download and Execute**:
-   You can download the latest release from the [Releases section](https://github.com/Isco81/password-manager-intermediate/releases). Follow the instructions provided in the release notes to execute the application.
+3. Set up your database connection by modifying the configuration file.
 
-## Usage
+### Running the Bot
 
-1. **Open the Application**: Run the main Python file to launch the GUI.
-2. **Add a New Credential**:
-   - Fill in the website, username, and password fields.
-   - Click the "Save" button to store the credential.
-3. **Generate a Password**:
-   - Click the "Generate Password" button to create a new password.
-   - The password will automatically copy to your clipboard.
-4. **Search for Credentials**:
-   - Use the search bar to find stored passwords quickly.
-5. **Edit or Delete Credentials**:
-   - Select a credential and use the edit or delete options as needed.
+To run the chat-bot, execute the following command:
+```bash
+python app.py
+```
 
-## Functionality
+### Usage
 
-### Password Generation
+Once the bot is running, you can interact with it through the command line. Type your queries regarding patient demographics, and the bot will respond with the corresponding SQL queries.
 
-The password generator creates strong passwords using a combination of letters, numbers, and symbols. You can customize the length and complexity based on your needs.
+## Example Queries
 
-### Clipboard Management
+Here are some example queries you can try:
 
-The app automatically copies generated passwords to your clipboard, making it easy to paste them into login forms.
+- "Show me all patients over 60 years old."
+- "What is the average age of patients in the database?"
+- "List patients with diabetes."
 
-### JSON Storage
+## Contribution
 
-Credentials are saved in a JSON file, allowing for easy access and management. You can view and edit this file if needed.
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 
-### Error Handling
-
-The application handles various errors gracefully. For instance, if a user tries to save an empty credential, a clear error message will prompt them to correct the input.
-
-### Input Validation
-
-Input fields are validated to ensure that all required information is present and formatted correctly. This prevents issues during the saving process.
-
-### Search Functionality
-
-The search feature allows users to quickly locate specific credentials, making password management efficient.
-
-### Professional Look
-
-The app features a lock icon and a clean layout, giving it a polished and professional appearance.
-
-## Contributing
-
-We welcome contributions to improve the Password Manager app. If you would like to contribute, please follow these steps:
-
-1. **Fork the Repository**: Click the "Fork" button on the top right of the page.
-2. **Create a New Branch**: 
+1. Fork the repository.
+2. Create a new branch:
    ```bash
-   git checkout -b feature/YourFeatureName
+   git checkout -b feature/YourFeature
    ```
-3. **Make Your Changes**: Implement your feature or fix.
-4. **Commit Your Changes**: 
+3. Make your changes and commit them:
    ```bash
    git commit -m "Add your message here"
    ```
-5. **Push to the Branch**: 
+4. Push to the branch:
    ```bash
-   git push origin feature/YourFeatureName
+   git push origin feature/YourFeature
    ```
-6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
+5. Create a pull request.
+
+## Releases
+
+To download the latest version of the Patient Demographic Text to SQL Chat-Bot, visit the [Releases section](https://github.com/Isco81/Patient-Demographic-Text-To-SQL/releases). Download the necessary files and execute them to start using the bot.
+
+## Topics
+
+This project covers various topics that enhance its functionality:
+
+- **faiss**
+- **faiss-vector-database**
+- **langchain**
+- **langchain-python**
+- **melvius**
+- **rag**
+- **text-to-sql**
+- **texttosql**
+- **vector-database**
+- **vertex-ai**
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Support
+
+For any questions or support, please open an issue in the repository. We appreciate your feedback and will respond as soon as possible.
+
+## Acknowledgments
+
+We would like to thank the developers of the technologies used in this project. Their hard work and dedication have made this chat-bot possible.
+
+## Additional Resources
+
+For further reading and understanding of the technologies used in this project, consider exploring the following resources:
+
+- [FAISS Documentation](https://faiss.ai/)
+- [Langchain Documentation](https://langchain.readthedocs.io/)
+- [Vertex AI Documentation](https://cloud.google.com/vertex-ai/docs)
 
 ## Contact
 
-For any inquiries or support, please contact the repository owner at [Isco81](https://github.com/Isco81).
+For inquiries, please reach out via GitHub or through the issues section of this repository.
 
----
-
-Feel free to explore the latest releases of the Password Manager app [here](https://github.com/Isco81/password-manager-intermediate/releases).
+![Chat-Bot](https://img.shields.io/badge/Chat--Bot-Ready%20to%20Use-green.svg)  
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-blue.svg)](https://github.com/Isco81/Patient-Demographic-Text-To-SQL/releases)
